@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Straight Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2f2da00ea.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body onload="AOS.init();">
+
+  <header class="sticky-header">
+    <div class="container">
+      <img src="https://i.ibb.co/5hDm92Tv/logo.png" alt="Pet Straight Home Logo" class="logo" />
+      <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-right">
+        <h1>Welcome to Pet Straight Home</h1>
+        <p>Your trusted store for quality pet food, toys, grooming, and medical care.</p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <img src="https://i.ibb.co/Fbs3hFZB/hero-image.jpg" alt="Happy Pet" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>At Pet Straight Home, we help pet lovers keep their furry friends happy, healthy, and well cared for. Our curated collection of products ensures comfort, nutrition, and joy for your pets.</p>
+    </div>
+  </section>
+
+  <section id="products" class="products" data-aos="fade-up">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-slider">
+
+        <a class="product" href="https://wa.me/2348163618649?text=I'm%20interested%20in%20your%20Pet%20Food%20products" target="_blank">
+          <img src="https://i.ibb.co/Wvn5DmFZ/pet-food.jpg" alt="Pet Food" />
+          <h3>Pet Food</h3>
+          <p>Wholesome and nutritious meals for your furry companions.</p>
+        </a>
+
+        <a class="product" href="https://wa.me/2348163618649?text=I'm%20interested%20in%20your%20Toys%20and%20Play%20items" target="_blank">
+          <img src="https://i.ibb.co/dwpYDK5K/toys-and-play.jpg" alt="Toys and Play" />
+          <h3>Toys & Play</h3>
+          <p>Fun, safe, and durable toys to keep your pets active.</p>
+        </a>
+
+        <a class="product" href="https://wa.me/2348163618649?text=I'm%20interested%20in%20your%20Grooming%20products" target="_blank">
+          <img src="https://i.ibb.co/FbmkqZzK/grooming.jpg" alt="Grooming" />
+          <h3>Grooming</h3>
+          <p>High-quality grooming kits and essentials.</p>
+        </a>
+
+        <a class="product" href="https://wa.me/2348163618649?text=I'm%20interested%20in%20your%20Medical%20Care%20products" target="_blank">
+          <img src="https://i.ibb.co/nsYTrYrG/medical-care.jpg" alt="Medical Care" />
+          <h3>Medical Care</h3>
+          <p>Reliable health and wellness products for pets.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We're available for all inquiries via WhatsApp, TikTok, & Instagram. Alternatively, fill out the contact form below.</p>
+      <ul class="social-links">
+        <li><a href="https://wa.me/2348163618649" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        <li><a href="https://tiktok.com/@wiselexofficial01" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        <li><a href="https://instagram.com/wiselexofficial_01" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      </ul>
+      <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Pet Straight Home. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
